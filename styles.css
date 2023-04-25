@@ -1,0 +1,72 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.header {
+  border: 0;
+  background-color: rgb(185, 210, 195);
+  height: 56px;
+  position: sticky;
+  top: 0;
+}
+
+.header-content {
+  width: 60vw;
+  height: 56px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Sigmar", cursive;
+  font-size: 30px;
+}
+
+.links-right,
+.links-right ul {
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.links-right li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.sm-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px;
+}
+
+.instagram-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.sm-logo {
+  height: 20px;
+}
+
+.footer {
+  background-color: burlywood;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
