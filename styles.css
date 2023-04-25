@@ -1,3 +1,14 @@
+/* 
+COLOR PALETTE 
+body: #FFFFFF
+quotation background: #E3DEDF
+banner + button: #C27096
+header + introduction: #B9D2C3
+footer: #1D201E
+
+for fonts - using same colors on contrasting backgrounds
+*/
+
 body {
   font-family: "Open Sans", sans-serif;
   display: flex;
@@ -8,7 +19,6 @@ body {
 }
 
 .header {
-  border: 0;
   background-color: rgb(185, 210, 195);
   height: 56px;
   position: sticky;
@@ -17,7 +27,7 @@ body {
 
 .header-content {
   width: 60vw;
-  height: 56px;
+  height: inherit;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -33,6 +43,9 @@ body {
 .links-right ul {
   display: flex;
   gap: 24px;
+}
+
+.links-right ul {
   margin: 0;
   padding: 0;
 }
@@ -44,19 +57,6 @@ body {
 a {
   text-decoration: none;
   color: black;
-}
-
-.sm-links {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 16px;
-}
-
-.instagram-link {
-  display: flex;
-  align-items: center;
-  gap: 4px;
 }
 
 .sm-logo {
