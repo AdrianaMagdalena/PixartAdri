@@ -134,7 +134,8 @@ a {
 /* footer */
 
 .footer {
-  background-color: burlywood;
+  background-color: #1d201e;
+  color: #e3dedf;
   height: 56px;
   display: flex;
   justify-content: center;
