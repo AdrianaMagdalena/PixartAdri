@@ -1,7 +1,7 @@
 /* 
 COLOR PALETTE 
 body: #FFFFFF
-quotation background: #E3DEDF
+quote background: #E3DEDF
 banner + button: #C27096
 header + introduction: #B9D2C3
 footer: #1D201E
@@ -108,6 +108,28 @@ a {
 /* gallery */
 
 /* quote */
+.quote-container {
+  background-color: #e3dedf;
+  padding: 60px 0;
+}
+
+.quote,
+.quote-author {
+  margin: 0 auto;
+  padding: 0;
+  width: 60vw;
+}
+
+.quote {
+  font-size: 28px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.quote-author {
+  text-align: end;
+  font-size: 24px;
+}
 
 /* footer */
 
