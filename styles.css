@@ -18,8 +18,20 @@ body {
   flex-direction: column;
 }
 
+button {
+  padding: 8px 16px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #1d201e;
+  color: #e3dedf;
+  border: none;
+  border-radius: 5px;
+}
+
 button:hover {
   cursor: pointer;
+  box-shadow: 0 0 5px #1d201e;
 }
 
 /* header */
@@ -100,17 +112,6 @@ a {
 .top-section img {
   height: 400px;
   box-shadow: 0 2px 5px #1d201e80;
-}
-
-.top-section button {
-  padding: 8px 16px;
-  font-family: inherit;
-  font-size: 18px;
-  font-weight: 600;
-  background-color: #1d201e;
-  color: #e3dedf;
-  border: solid 1px #000000;
-  border-radius: 7px;
 }
 
 /* gallery */
@@ -205,14 +206,6 @@ a {
 }
 
 .banner button {
-  padding: 8px 16px;
-  font-family: inherit;
-  font-size: 18px;
-  font-weight: 600;
-  background-color: #1d201e;
-  color: #e3dedf;
-  border: solid 1px #000000;
-  border-radius: 7px;
   align-self: center;
 }
 
