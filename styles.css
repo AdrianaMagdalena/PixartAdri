@@ -18,6 +18,12 @@ body {
   flex-direction: column;
 }
 
+#about,
+#gallery,
+#contact {
+  scroll-margin-top: 6rem;
+}
+
 button {
   padding: 8px 16px;
   font-family: inherit;
