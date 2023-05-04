@@ -1,10 +1,9 @@
 /* 
 COLOR PALETTE 
 body: #FFFFFF
-quote background: #E3DEDF
-banner + button: #C27096
-header + introduction: #B9D2C3
-footer: #1D201E
+quote background + tooltip: #E3DEDF
+header + introduction + button: #B9D2C3
+footer + button: #1D201E
 
 for fonts - using same colors on contrasting backgrounds
 */
@@ -96,6 +95,33 @@ a {
 
 .sm-logo:hover {
   cursor: pointer;
+}
+
+ul li .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+ul li .tooltip .tooltip-text {
+  /* tooltip positioning: */
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  left: 50%;
+  margin-left: -100px; /* half of the width below - to center it below the icon */
+  visibility: hidden; /* to make it popup on hover */
+  /* tooltip styling: */
+  width: 200px;
+  background-color: #1d201e;
+  color: #e3dedf;
+  font-size: smaller;
+  border-radius: 5px;
+  text-align: center;
+  padding: 4px 3px;
+}
+
+ul li .tooltip:hover .tooltip-text {
+  visibility: visible;
 }
 
 /* top section - introduction + picture */
