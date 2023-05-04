@@ -106,7 +106,7 @@ ul li .tooltip .tooltip-text {
   /* tooltip positioning: */
   position: absolute;
   z-index: 2;
-  top: 100%;
+  top: 110%;
   left: 50%;
   margin-left: -100px; /* half of the width below - to center it below the icon */
   visibility: hidden; /* to make it popup on hover */
@@ -122,6 +122,18 @@ ul li .tooltip .tooltip-text {
 
 ul li .tooltip:hover .tooltip-text {
   visibility: visible;
+}
+
+ul li .tooltip .tooltip-text::after {
+  /* this is the tooltip arrow to create a speech-bubble-style tooltip */
+  content: " ";
+  position: absolute;
+  bottom: 100%; /* at the top of the tooltip */
+  left: 50%;
+  margin-left: -5px; /* same as border-width to keep the arrow centered */
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #1d201e transparent;
 }
 
 /* top section - introduction + picture */
