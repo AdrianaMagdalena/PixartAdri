@@ -94,6 +94,10 @@ a {
   height: 20px;
 }
 
+.sm-logo:hover {
+  cursor: pointer;
+}
+
 /* top section - introduction + picture */
 .top-section {
   background-color: #b9d2c3;

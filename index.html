@@ -37,8 +37,8 @@
               ></a>
             </li>
             <li>
-              <a href="#"
-                ><div>
+              <a title="This does not guide anywhere, it's here just for looks">
+                <div>
                   <img
                     class="sm-logo"
                     src="https://cdn-icons-png.flaticon.com/512/2175/2175193.png"
@@ -46,7 +46,7 @@
               ></a>
             </li>
             <li>
-              <a href="#"
+              <a title="This does not guide anywhere, it's here just for looks"
                 ><div>
                   <img
                     class="sm-logo"
@@ -135,10 +135,20 @@
             Click the button to order a custom pixel art or ask me a question!
           </h3>
         </div>
-        <button alt="Contact me button">Contact me</button>
+        <button alt="Contact me button" onclick="contactMeAlert()">
+          Contact me
+        </button>
       </div>
     </div>
 
     <div class="footer">Copyright &copy; PixartAdri 2023</div>
+
+    <script>
+      function contactMeAlert() {
+        alert(
+          "Thank you for trying to contact me! Unfortunately, there's no contact form. If you really wish to send me a message, please do so on my Instagram page!"
+        );
+      }
+    </script>
   </body>
 </html>
