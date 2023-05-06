@@ -5,13 +5,13 @@ function contactMeAlert() {
   );
 }
 
-var modal = document.getElementById("myModal"); // get the modal
-var images = document.getElementsByClassName("myImages"); // get the img and insert in modal
-var modalImg = document.getElementById("img01");
+let modal = document.getElementById("myModal"); // get the modal
+let images = document.getElementsByClassName("myImages"); // get the img and insert in modal
+let modalImg = document.getElementById("img01");
 
 //Go through all of the images with our custom class:
-for (var i = 0; i < images.length; i++) {
-  var img = images[i];
+for (let i = 0; i < images.length; i++) {
+  let img = images[i];
   //attach click listener for this image:
   img.onclick = function (evt) {
     console.log(evt);
@@ -20,7 +20,7 @@ for (var i = 0; i < images.length; i++) {
   };
 }
 
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 span.onclick = function () {
   modal.style.display = "none";
 };
