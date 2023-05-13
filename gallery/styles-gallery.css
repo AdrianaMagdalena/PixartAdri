@@ -9,6 +9,8 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  min-width: 100vh;
+  overflow-x: hidden;
 }
 
 /* header */
@@ -111,12 +113,12 @@ ul li .tooltip .tooltip-text::after {
 /*gallery*/
 .gallery {
   flex: 1;
-  width: 70vw;
+  width: 80vw;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
+  gap: 16px;
   list-style-type: none;
   padding-bottom: 40px;
 }
@@ -130,11 +132,18 @@ ul li .tooltip .tooltip-text::after {
 .thumbnail {
   max-height: 250px;
   max-width: 250px;
+  transition: transform 0.3s;
+  cursor: pointer;
+  box-shadow: 0 0 16px 2px #e3dedf;
 }
 
 .thumbnail img {
   height: 100%;
   width: 100%;
+}
+
+.thumbnail:hover {
+  transform: scale(1.15);
 }
 
 /* footer */
