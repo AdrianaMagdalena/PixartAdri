@@ -146,13 +146,20 @@ ul li .tooltip .tooltip-text::after {
   width: 100%;
 }
 
+.thumbnail img:focus-visible,
+.thumbnail img:focus {
+  border: transparent;
+}
+
 .modal {
   position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 3;
   background-color: #1d201e;
   background-color: #1d201ee0;
   backdrop-filter: blur(3px);
-  padding-top: 150px;
   left: 0;
   top: 0;
   width: 100%;
@@ -163,9 +170,13 @@ ul li .tooltip .tooltip-text::after {
   display: none;
 }
 
+.modal .img-section {
+  display: flex;
+  align-items: center;
+}
+
 .modal img {
   margin: 0 auto;
-  display: block;
   width: 70%;
   max-width: 600px;
   animation-name: zoom;
@@ -185,6 +196,8 @@ ul li .tooltip .tooltip-text::after {
   position: absolute;
   top: 15px;
   right: 35px;
+  background-color: transparent;
+  border: transparent;
   color: #e3dedf;
   font-size: 40px;
   font-weight: bold;
@@ -193,6 +206,21 @@ ul li .tooltip .tooltip-text::after {
 
 .modal__close:hover,
 .modal__close:focus {
+  color: white;
+  cursor: pointer;
+}
+
+.modal__arrow {
+  color: #e3dedf;
+  font-size: 80px;
+  font-weight: 600;
+  margin: 0 32px;
+  background-color: transparent;
+  border: transparent;
+}
+
+.modal__arrow:hover,
+.modal__arrow:focus {
   color: white;
   cursor: pointer;
 }
