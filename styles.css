@@ -13,6 +13,9 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  min-height: 100vh;
+  min-width: 100vh;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -43,7 +46,7 @@ button:hover {
 /* header */
 .header {
   background-color: #b9d2c3;
-  height: 56px;
+  height: 60px;
   position: sticky;
   top: 0;
   z-index: 1;
