@@ -334,7 +334,7 @@ ul li .tooltip .tooltip-text::after {
 }
 
 /* media queries - small screen up to 765px */
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 766px) {
   button {
     min-width: fit-content;
     font-size: 0.9rem;
