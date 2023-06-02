@@ -304,3 +304,44 @@ ul li .tooltip .tooltip-text::after {
     font-size: 3rem;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .header-content {
+    width: 75vw;
+  }
+
+  .gallery {
+    width: 90vw;
+    gap: 10px;
+  }
+
+  .gallery-section h1 {
+    font-size: 2rem;
+    padding: 40px;
+  }
+
+  .thumbnail {
+    max-height: 200px;
+    max-width: 200px;
+  }
+
+  .modal {
+    width: 100dvw;
+    height: 100dvh;
+  }
+
+  .modal .img-section {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .modal img {
+    margin: 0 auto;
+    width: 60vw;
+  }
+
+  .modal__arrow {
+    font-size: 4rem;
+  }
+}

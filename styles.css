@@ -33,6 +33,7 @@ body {
 }
 
 button {
+  min-width: fit-content;
   padding: 8px 16px;
   font-family: inherit;
   font-size: 18px;
@@ -335,7 +336,6 @@ ul li .tooltip .tooltip-text::after {
 /* media queries - small screen up to 765px */
 @media screen and (max-width: 766px) {
   button {
-    min-width: fit-content;
     font-size: 0.9rem;
     padding: 6px 10px;
   }
