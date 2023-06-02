@@ -2,21 +2,18 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  border: 0;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-  min-width: 100vh;
-  overflow-x: hidden;
 }
 
 /* header */
 .header {
   background-color: #b9d2c3;
-  height: 60px;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -24,7 +21,6 @@ body {
 
 .header-content {
   width: 60vw;
-  height: inherit;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -32,6 +28,7 @@ body {
 }
 
 .logo {
+  height: 60px;
   font-family: "Sigmar", cursive;
   font-size: 30px;
   display: flex;
@@ -125,7 +122,7 @@ ul li .tooltip .tooltip-text::after {
 
 .gallery-section h1 {
   text-align: center;
-  padding: 56px;
+  padding: 50px;
   font-size: 48px;
   font-weight: 400;
 }
@@ -258,4 +255,52 @@ ul li .tooltip .tooltip-text::after {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* media queries - small screen up to 767px */
+@media screen and (max-width: 767px) {
+  .header-content {
+    width: 90vw;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links-right {
+    margin: 10px 0;
+  }
+
+  .gallery {
+    width: 95vw;
+    gap: 8px;
+  }
+
+  .gallery-section h1 {
+    font-size: 1.5rem;
+    padding: 35px;
+  }
+
+  .thumbnail {
+    max-height: 170px;
+    max-width: 170px;
+  }
+
+  .modal {
+    width: 100dvw;
+    height: 100dvh;
+  }
+
+  .modal .img-section {
+    width: 95vw;
+    display: flex;
+    align-items: center;
+  }
+
+  .modal img {
+    margin: 0 auto;
+    width: 50vw;
+  }
+
+  .modal__arrow {
+    font-size: 3rem;
+  }
 }
