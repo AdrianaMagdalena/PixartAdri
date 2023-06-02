@@ -216,9 +216,9 @@ ul li .tooltip .tooltip-text::after {
   display: none;
   position: fixed;
   z-index: 3;
-  padding-top: 100px;
   left: 0;
   top: 0;
+  padding-top: 100px;
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -227,9 +227,14 @@ ul li .tooltip .tooltip-text::after {
   cursor: default;
 }
 
-.modal .modal-content {
+.modal .img-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal img {
   margin: 0 auto;
-  display: block;
   width: 80vw;
   max-width: 700px;
   animation-name: zoom;
@@ -247,7 +252,7 @@ ul li .tooltip .tooltip-text::after {
 
 .close {
   position: absolute;
-  top: 15px;
+  top: 35px;
   right: 35px;
   color: #e3dedf;
   font-size: 40px;
@@ -489,10 +494,18 @@ ul li .tooltip .tooltip-text::after {
   .modal {
     width: 100dvw;
     height: 100dvh;
+    padding: 0;
   }
 
-  .modal .modal-content {
-    width: 75vw;
-    max-width: 650px;
+  .modal .img-section {
+    margin: 0 auto;
+
+    height: 400px;
+    width: auto;
+  }
+
+  .modal img {
+    height: 100%;
+    width: auto;
   }
 }

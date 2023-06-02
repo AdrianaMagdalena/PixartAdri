@@ -336,7 +336,8 @@ ul li .tooltip .tooltip-text::after {
 
   .modal img {
     margin: 0 auto;
-    width: 60vw;
+    height: 400px;
+    width: auto;
   }
 
   .modal__arrow {
