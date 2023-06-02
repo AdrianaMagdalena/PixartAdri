@@ -342,8 +342,8 @@ ul li .tooltip .tooltip-text::after {
   }
 
   .header-content {
+    width: 90vw;
     flex-direction: column;
-    width: 90dvw;
     align-items: flex-start;
   }
 
@@ -416,5 +416,17 @@ ul li .tooltip .tooltip-text::after {
   .banner-text h3 {
     padding: 6px 0;
     font-size: 0.9rem;
+  }
+
+  .modal {
+    width: 100dvw;
+    height: 100dvh;
+  }
+
+  .modal .modal-content {
+    margin: 0 auto;
+    display: block;
+    width: 80vw;
+    max-width: 600px;
   }
 }
