@@ -200,16 +200,11 @@ ul li .tooltip .tooltip-text::after {
   transition: 0.3s;
 }
 
-.card img {
-  margin: 0;
-}
-
 .card h3 {
   font-size: 16px;
   font-weight: 400;
   padding: 0 25px 10px;
   text-align: center;
-  margin: 0;
 }
 
 .card:hover {
@@ -235,7 +230,7 @@ ul li .tooltip .tooltip-text::after {
 .modal .modal-content {
   margin: 0 auto;
   display: block;
-  width: 80%;
+  width: 80vw;
   max-width: 700px;
   animation-name: zoom;
   animation-duration: 0.7s;
@@ -316,6 +311,7 @@ ul li .tooltip .tooltip-text::after {
 .banner-text h3 {
   font-size: 18px;
   font-weight: 400;
+  padding-top: 4px;
 }
 
 .banner button {
@@ -333,7 +329,7 @@ ul li .tooltip .tooltip-text::after {
   align-items: center;
 }
 
-/* media queries - small screen up to 765px */
+/* media queries - small screen up to 766px */
 @media screen and (max-width: 766px) {
   button {
     font-size: 0.9rem;
@@ -380,11 +376,11 @@ ul li .tooltip .tooltip-text::after {
   }
 
   .card {
-    max-width: 180px;
+    max-width: 170px;
   }
 
   .card h3 {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     padding: 0 10px 10px;
   }
 
@@ -414,7 +410,7 @@ ul li .tooltip .tooltip-text::after {
 
   .banner-text h3 {
     padding: 6px 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .modal {
@@ -427,5 +423,76 @@ ul li .tooltip .tooltip-text::after {
     display: block;
     width: 80vw;
     max-width: 600px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .header-content {
+    width: 75vw;
+  }
+
+  .top-section .content {
+    width: 80vw;
+    gap: 50px;
+  }
+
+  .top-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .top-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .top-section img {
+    max-height: 330px;
+    max-width: 330px;
+    box-shadow: 0 2px 5px #1d201e80;
+  }
+
+  .gallery-preview {
+    width: 90vw;
+  }
+
+  .gallery-preview h2 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    max-width: 210px;
+  }
+
+  .card h3 {
+    font-size: 0.95rem;
+    padding: 0 15px 10px;
+  }
+
+  .quote-container {
+    padding: 60px 0;
+  }
+
+  .quote,
+  .quote-author {
+    font-size: 1.4rem;
+    width: 75vw;
+  }
+
+  .banner {
+    width: 65vw;
+    padding: 30px;
+  }
+
+  .banner-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .modal {
+    width: 100dvw;
+    height: 100dvh;
+  }
+
+  .modal .modal-content {
+    width: 75vw;
+    max-width: 650px;
   }
 }

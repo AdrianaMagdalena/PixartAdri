@@ -332,8 +332,6 @@ ul li .tooltip .tooltip-text::after {
 
   .modal .img-section {
     width: 90vw;
-    display: flex;
-    align-items: center;
   }
 
   .modal img {
