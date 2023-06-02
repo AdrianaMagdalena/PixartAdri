@@ -8,14 +8,20 @@ footer + button + tooltip: #1D201E
 for fonts - using same colors on contrasting backgrounds
 */
 
-body {
-  font-family: "Open Sans", sans-serif;
+/* media query breakpoints:
+1. small - up to 767px
+2. medium - between 768px and 1365px
+3. big - above 1366px - default */
+
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: 0;
-  min-height: 100vh;
-  min-width: 100vh;
-  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
   display: flex;
   flex-direction: column;
 }
@@ -46,7 +52,6 @@ button:hover {
 /* header */
 .header {
   background-color: #b9d2c3;
-  height: 60px;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -54,7 +59,7 @@ button:hover {
 
 .header-content {
   width: 60vw;
-  height: inherit;
+  height: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -62,6 +67,7 @@ button:hover {
 }
 
 .logo {
+  height: 60px;
   font-family: "Sigmar", cursive;
   font-size: 30px;
   display: flex;
@@ -79,11 +85,6 @@ button:hover {
   gap: 24px;
 }
 
-.links-right ul {
-  margin: 0;
-  padding: 0;
-}
-
 .links-right li {
   list-style: none;
 }
@@ -95,6 +96,7 @@ a {
 
 .sm-logo {
   height: 20px;
+  width: 20px;
 }
 
 .sm-logo:hover {
@@ -155,6 +157,7 @@ ul li .tooltip .tooltip-text::after {
 }
 
 .top-section h3 {
+  margin: 20px 0;
   font-size: 18px;
   font-weight: 400;
   text-align: justify;
@@ -163,6 +166,7 @@ ul li .tooltip .tooltip-text::after {
 
 .top-section img {
   height: 400px;
+  width: 400px;
   box-shadow: 0 2px 5px #1d201e80;
 }
 
@@ -174,7 +178,7 @@ ul li .tooltip .tooltip-text::after {
 
 .gallery-preview h2 {
   text-align: center;
-  margin-top: -10px;
+  margin: -10px 0 30px;
   font-size: 28px;
   font-weight: 500;
 }
@@ -208,11 +212,11 @@ ul li .tooltip .tooltip-text::after {
   margin: 0;
 }
 
-/* overlay modal for displaying pictures */
 .card:hover {
   box-shadow: 0 0 5px 1px #b9d2c3;
 }
 
+/* overlay modal for displaying pictures */
 .modal {
   display: none;
   position: fixed;
@@ -298,6 +302,7 @@ ul li .tooltip .tooltip-text::after {
   justify-content: center;
   padding: 40px;
 }
+
 .banner {
   width: 50vw;
   padding: 40px;
@@ -306,12 +311,6 @@ ul li .tooltip .tooltip-text::after {
   display: flex;
   align-content: center;
   justify-content: space-evenly;
-}
-
-.banner h2,
-.banner h3 {
-  margin: 0;
-  padding: 0;
 }
 
 .banner-text h3 {
@@ -332,4 +331,90 @@ ul li .tooltip .tooltip-text::after {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* media queries - small screen up to 765px */
+@media screen and (max-width: 765px) {
+  button {
+    min-width: fit-content;
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    width: 90dvw;
+    align-items: flex-start;
+  }
+
+  .links-right {
+    margin: 10px 0;
+  }
+
+  .top-section .content {
+    width: 85vw;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .top-section h1 {
+    font-size: 1.4rem;
+  }
+
+  .top-section h3 {
+    font-size: 1rem;
+  }
+
+  .top-section img {
+    max-height: 300px;
+    max-width: 300px;
+    box-shadow: 0 2px 5px #1d201e80;
+  }
+
+  .gallery-preview {
+    width: 90vw;
+  }
+
+  .gallery-preview h2 {
+    font-size: 1.2rem;
+  }
+
+  .card {
+    max-width: 180px;
+  }
+
+  .card h3 {
+    font-size: 0.85rem;
+    padding: 0 10px 10px;
+  }
+
+  .quote-container {
+    padding: 50px 0;
+  }
+
+  .quote,
+  .quote-author {
+    font-size: 1.1rem;
+    width: 80vw;
+  }
+
+  .banner {
+    width: 75vw;
+    padding: 25px;
+    flex-direction: column;
+  }
+
+  .banner button {
+    align-self: flex-start;
+  }
+
+  .banner-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .banner-text h3 {
+    padding: 6px 0;
+    font-size: 0.9rem;
+  }
 }
